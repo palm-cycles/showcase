@@ -1,0 +1,219 @@
+:root {
+  --color: #001219;
+  --main-bg-color: #94D2BD;
+  --secondary-bg-color: #E9D8A6;
+  --presentation-padding: 20px;
+  --padding: 10vh;
+}
+
+@font-face {
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  src: local('Zen Kaku Gothic Antique'), url('./assets/font/ZenKakuGothicAntique-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  src: local('Zen Kaku Gothic Antique'), url('./assets/font/ZenKakuGothicAntique-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+html,
+body {
+  font-size: 20px;
+}
+
+body {
+  position: relative;
+  background-color: var(--main-bg-color);
+  color: var(--color);
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+
+.main-section {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-section > *:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.main-section > .title {
+  font-size: 2rem;
+}
+
+.action-section {
+  position: relative;
+  width: 100%;
+  background-color: var(--secondary-bg-color);
+  border-radius: 50px 50px 0 0;
+  padding: var(--padding) 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.action-palm-tree {
+  position: absolute;
+  height: 90vh;
+  top: -20px;
+  right: -280px;
+  opacity: 0.3;
+  fill: black;
+}
+
+.action-section > .action-content:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.action-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.action-content > div:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.image-presentation {
+  position: relative;
+  display: flex;
+}
+
+.image-presentation > img {
+  width: 100%;
+  height: auto;
+}
+
+.image-presentation > .image-presentation-border {
+  top: var(--presentation-padding);
+  left: var(--presentation-padding);
+  position: absolute;
+  width: calc(100% - (var(--presentation-padding) * 2));
+  height: calc(100% - (var(--presentation-padding) * 2));
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+.text-presentation {
+  padding: var(--padding) var(--presentation-padding);
+}
+
+.second-presentation {
+  background-color: var(--secondary-bg-color);
+}
+
+.actuality {
+  padding: var(--padding) var(--presentation-padding);
+}
+
+.actuality-card {
+  margin: 0 1rem;
+  background-color: var(--secondary-bg-color);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.actuality-card > .actuality-image {
+  width: 100%;
+  height: auto;
+}
+
+.actuality-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+
+.actuality-title > div {
+  font-weight: bold;
+}
+
+.actuality-title > img {
+  height: 30px;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+  margin-bottom: var(--padding);
+}
+
+.demographic {
+  background-color: var(--secondary-bg-color);
+  padding-bottom: var(--padding);
+}
+
+.demographic > .demographic-content:last-child {
+  margin-bottom: var(--presentation-padding);
+}
+
+.demographic > .demographic-content {
+  padding: var(--presentation-padding) calc(var(--presentation-padding) * 2);
+}
+
+.demographic-content {
+  display: flex;
+}
+
+.demographic-icon {
+  height: 45px;
+  margin-right: 2rem;
+}
+
+.contact {
+  padding: var(--padding) var(--presentation-padding);
+}
+
+.contact-form > * {
+  width: 100%;
+}
+
+.contact-form > textarea,
+.contact-form > input {
+  margin-bottom: 1rem;
+  margin-top: 0.25rem;
+  padding: 0.5rem 0.25rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+}
+
+input[type=submit] {
+  border: none;
+  border: 1px solid black;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  background: transparent;
+}
