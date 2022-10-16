@@ -28,6 +28,6 @@ function scrollFunction() {
 }
 
 window.onwheel = function (e) {
-  scrollFunction();
+  // scrollFunction();
 }  
 window.initMap = initMap;
