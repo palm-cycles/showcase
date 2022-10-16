@@ -20,9 +20,9 @@ function scrollFunction() {
   if (logo !== undefined && navbar !== undefined) {
     const top = logo.offsetTop + logo.offsetHeight;
     if (document.body.scrollTop > top || document.documentElement.scrollTop > top) {
-      navbar.style.top = "0";
+      navbar.style.opacity = "1";
     } else {
-      navbar.style.top = "-75px";
+      navbar.style.opacity = "0";
     }
   }
 }

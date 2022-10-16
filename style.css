@@ -48,10 +48,11 @@ body {
 
 .navbar {
   position: fixed;
-  top: -75px;
+  top: 0px;
   width: 100%;
   display: block;
-  transition: top 0.5s;
+  transition: opacity 0.5s;
+  opacity: 0;
   z-index: 2;
   background-color: rgba(var(--third-bg-color-rgb), 0.99);
 }
