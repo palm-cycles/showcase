@@ -1,8 +1,8 @@
 :root {
   --color: #001219;
-  --main-bg-color: #94D2BD;
-  --secondary-bg-color: #E9D8A6;
-  --presentation-padding: 20px;
+  --main-bg-color: #E9D8A6;
+  --secondary-bg-color: #94D2BD;
+  --presentation-padding: 15px;
   --padding: 10vh;
 }
 
@@ -56,6 +56,11 @@ body {
   margin-bottom: 0.5rem;
 }
 
+.logo > img {
+  width: 100%;
+  height: auto;
+}
+
 .main-section > .title {
   font-size: 2rem;
 }
@@ -64,7 +69,7 @@ body {
   position: relative;
   width: 100%;
   background-color: var(--secondary-bg-color);
-  border-radius: 50px 50px 0 0;
+  border-radius: 20px 20px 0 0;
   padding: var(--padding) 0;
   display: flex;
   justify-content: center;
@@ -75,9 +80,9 @@ body {
 .action-palm-tree {
   position: absolute;
   height: 90vh;
-  top: -20px;
-  right: -280px;
-  opacity: 0.3;
+  top: 10vh;
+  right: -315px;
+  opacity: 0.1;
   fill: black;
 }
 
@@ -113,7 +118,7 @@ body {
   width: calc(100% - (var(--presentation-padding) * 2));
   height: calc(100% - (var(--presentation-padding) * 2));
   border: 1px solid white;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .text-presentation {
@@ -183,6 +188,7 @@ body {
 
 .demographic-content {
   display: flex;
+  align-items: center;
 }
 
 .demographic-icon {
