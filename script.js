@@ -14,4 +14,20 @@ function initMap() {
   });
 }
 
+function scrollFunction() {
+  const logo = document.getElementById("logo");
+  const navbar = document.getElementById("navbar");
+  if (logo !== undefined && navbar !== undefined) {
+    const top = logo.offsetTop + logo.offsetHeight;
+    if (document.body.scrollTop > top || document.documentElement.scrollTop > top) {
+      navbar.style.top = "0";
+    } else {
+      navbar.style.top = "-75px";
+    }
+  }
+}
+
+window.onwheel = function (e) {
+  scrollFunction();
+}  
 window.initMap = initMap;

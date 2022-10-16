@@ -2,6 +2,8 @@
   --color: #001219;
   --main-bg-color: #E9D8A6;
   --secondary-bg-color: #94D2BD;
+  --third-bg-color: #0A9396;
+  --third-bg-color-rgb: 10, 147, 150; 
   --presentation-padding: 15px;
   --padding: 10vh;
 }
@@ -42,6 +44,30 @@ body {
   overflow-y: auto;
   overflow-x: hidden;
   font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  top: -75px;
+  width: 100%;
+  display: block;
+  transition: top 0.5s;
+  z-index: 2;
+  background-color: rgba(var(--third-bg-color-rgb), 0.99);
+}
+
+.navbar > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  padding: 0.5rem var(--presentation-padding);
+  margin: 0;
+}
+
+.navbar-logo > img {
+  height: 25px;
+  width: auto;
 }
 
 .main-section {
